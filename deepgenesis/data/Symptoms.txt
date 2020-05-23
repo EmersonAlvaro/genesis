@@ -9,7 +9,7 @@ back pain
 bone pain
 bruising
 bulging fontanelle
-cervical lymphadenopathy
+lymphadenopathy
 chronic ear discharge
 compression of local structures
 constipation
@@ -48,7 +48,7 @@ Masses  on neck
 Masses  on trunk
 motor and sensory signs
 nasal obstruction
-nausea and vomiting
+nausea
 neurologic defecits
 neurologic symptoms
 night sweats
@@ -61,7 +61,6 @@ papilledema
 pathological fracture
 periorbital ecchymoses
 personality and mood changes
-personality changes
 petechiae
 precocious puberty
 prolonged fever
