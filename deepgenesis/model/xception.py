@@ -8,7 +8,7 @@ class Xception:
         self.inputs = tf.keras.layers.Input(shape=(num_features, 2))
         hiddens = self.build_xception(self.inputs)
         hiddens = tf.keras.layers.Flatten() (hiddens)
-        self.outputs = tf.keras.layers.Dense(num_classes, activation=tf.nn.sigmoid,
+        self.outputs = tf.keras.layers.Dense(num_classes, activation=tf.nn.softmax,
                   kernel_initializer=tf.initializers.GlorotUniform())(hiddens)
 
     def get_model(self):
@@ -71,7 +71,7 @@ class Xception:
                         strides=strides, padding=padding,
                         kernel_initializer=tf.initializers.GlorotUniform(),
                         use_bias=False)(inputs)
-        outputs = tf.keras.layers.BatchNormalization() (outputs)
+        # outputs = tf.keras.layers.BatchNormalization() (outputs)
 
         if useReLu:
             return tf.keras.layers.ReLU()(outputs)
@@ -82,7 +82,7 @@ class Xception:
         outputs = tf.keras.layers.SeparableConv1D(filters=filters, kernel_size=kernel_size,
                         strides=strides, padding=padding,
                         use_bias=False)(inputs)
-        outputs = tf.keras.layers.BatchNormalization() (outputs)    
+        # outputs = tf.keras.layers.BatchNormalization() (outputs)    
         
         if useReLu:
             return tf.keras.layers.ReLU()(outputs)
