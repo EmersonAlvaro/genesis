@@ -1,1 +1,76 @@
-
+abdominal distention
+abdominal mass
+abdominal pain
+amenorrhea
+anorexia
+ataxia
+back pain
+bone pain
+bruising
+bulging fontanelle
+cervical lymphadenopathy
+chronic ear discharge
+compression of local structures
+constipation
+cranial nerve palsies
+developmental delay or regression
+diabetes insipidus
+diplopia
+dysphagia
+enuresis
+epistaxis
+failure to thrive
+fatigue
+fever
+gingival bleeding
+headache
+hematuria
+hepatosplenomegaly
+heterochromia of the iris
+Horner syndrome
+hypertension
+increasing head circumference
+irritability
+leg weakness
+Leukokoria
+limp
+Localized bone pain
+lymphadenopathy
+malaise
+motor and sensory signs
+nasal obstruction
+nausea and vomiting
+neurologic defecits
+neurologic symptoms
+night sweats
+obstructive symptoms of the bowel and bladder
+opsoclonus-myoclonus syndrome
+otitis media
+Pallor
+Palpable mass
+papilledema
+pathological fracture
+periorbital ecchymoses
+personality changes
+petechiae
+precocious puberty
+prolonged fever
+proptosis
+proptosis 
+rashes
+respiratory symptoms
+seizures
+squint
+subcutaneous nodules
+swelling or deformity
+symptoms caused by pressure on adjacent structures
+symptoms due to bone marrow infiltration
+tinnitus
+torticollis
+trismus
+unexplained deteriorating school performance
+vaginal bleeding
+vision loss
+visual disturbances 
+vomiting
+weight loss
