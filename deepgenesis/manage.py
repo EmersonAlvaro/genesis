@@ -17,5 +17,5 @@ ds = DataSet()
 xception =  Xception()
 
 # xception.plot_model()
-# train = Train()
-# train.train(epochs=3)
+train = Train()
+train.train(epochs=3)

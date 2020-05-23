@@ -5,7 +5,7 @@ from pathlib import Path
 class Xception:
 
     def __init__(self, num_classes=26, num_features=30):
-        self.inputs = tf.keras.layers.Input(shape=(num_features, 1))
+        self.inputs = tf.keras.layers.Input(shape=(num_features, 2))
         hiddens = self.build_xception(self.inputs)
         hiddens = tf.keras.layers.Flatten() (hiddens)
         self.outputs = tf.keras.layers.Dense(num_classes, activation=tf.nn.sigmoid,

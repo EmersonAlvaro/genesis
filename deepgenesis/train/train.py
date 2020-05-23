@@ -13,6 +13,8 @@ class Train:
     def train(self, lr=1e-3, epochs = 12):
         X, Y = self.ds.load_dataset()
         
+        print("shape {}".format(X.shape))
+        
         batch , num_features , num_channel = X.shape
         xception = Xception(num_classes=4, num_features=num_features)
 
