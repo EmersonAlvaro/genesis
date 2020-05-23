@@ -3,6 +3,7 @@ abdominal mass
 abdominal pain
 amenorrhea
 anorexia
+arthritis
 ataxia
 back pain
 bone pain
@@ -13,10 +14,12 @@ chronic ear discharge
 compression of local structures
 constipation
 cranial nerve palsies
+Dermatologic manifestations
 developmental delay or regression
 diabetes insipidus
 diplopia
 dysphagia
+ecchymoses
 enuresis
 epistaxis
 failure to thrive
@@ -31,12 +34,18 @@ Horner syndrome
 hypertension
 increasing head circumference
 irritability
+kyphoscoliosis
 leg weakness
 Leukokoria
 limp
 Localized bone pain
+lordosis
 lymphadenopathy
 malaise
+Masses  on extremities
+Masses  on head 
+Masses  on neck
+Masses  on trunk
 motor and sensory signs
 nasal obstruction
 nausea and vomiting
@@ -51,18 +60,20 @@ Palpable mass
 papilledema
 pathological fracture
 periorbital ecchymoses
+personality and mood changes
 personality changes
 petechiae
 precocious puberty
 prolonged fever
 proptosis
-proptosis 
 rashes
 respiratory symptoms
+Scrotal swelling or mass
 seizures
 squint
 subcutaneous nodules
 swelling or deformity
+swelling/bleeding gums
 symptoms caused by pressure on adjacent structures
 symptoms due to bone marrow infiltration
 tinnitus
