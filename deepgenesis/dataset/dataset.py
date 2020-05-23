@@ -3,30 +3,47 @@ from settings import *
 import tensorflow as tf
 import pandas as pd
 from pathlib import Path
-from sklearn.preprocessing import OneHotEncoder
 from sklearn.preprocessing import LabelEncoder 
-from sklearn.compose import ColumnTransformer
 import numpy as np
 
 class DataSet:
 
     def __init__(self):
-        x, y = self.load_dataset()
+        X, Y = self.load_dataset()
 
-        print("====== features ======= \n{} \n".format(x))
-        print("======== labels in one-hot encoding ====== \n{}\n".format(y))
+        # print(" {} \n input shape {}".format(X, X.shape))
+        # print("{} \n labels in one-hot encoding shape {}".format(Y, Y.shape))
        
     def load_dataset(self):
-        path = Path.joinpath(data_dir,'onehotenc_symptoms_desease.csv')
+        path = Path.joinpath(data_dir,'symptoms_cancer_test.csv')
         df = pd.read_csv(path)
         
-        print("====== entire dataset ===== \n {} ".format(df))
-
+        print(df)
         le = LabelEncoder()
-        df.desease = le.fit_transform(df.desease.values)                
-        df.symptoms = [np.array(symptoms.split(' '), dtype=np.float32) for symptoms in df.symptoms]
+        df.cancertype = le.fit_transform(df.cancertype.values)                   
+        
+        # ct = ColumnTransformer([("disease", OneHotEncoder(), [1])],    remainder = 'passthrough')
+        # df = ct.fit_transform(df)
+        X = []
+        S = df.symptoms.values
+        R = df.redflags.values
+        Y = df.cancertype.values
 
-        ct = ColumnTransformer([("desease", OneHotEncoder(), [1])],    remainder = 'passthrough')
-        df = ct.fit_transform(df)
+        bitmap_size =  len(S[0].split(' '))
+        num_examples = len(S)
 
-        return df[:, -1], df[:, :-1]
+        for s, r in zip(S, R):
+            s = s.split(' ')
+            r = r.split(' ')
+
+            for ch in s+r: 
+                X.append(float(ch))
+        
+        
+        X = np.array(X)
+        print(X)
+        X = X.reshape(num_examples, bitmap_size, 2)
+        print(X[3])
+        print(X.shape)
+        Y = np.array(Y)
+        return X, Y
