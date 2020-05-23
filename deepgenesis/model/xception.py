@@ -71,7 +71,7 @@ class Xception:
                         strides=strides, padding=padding,
                         kernel_initializer=tf.initializers.GlorotUniform(),
                         use_bias=False)(inputs)
-        # outputs = tf.keras.layers.BatchNormalization() (outputs)
+        # outputs = tf.keras.layers.BatchNormalization(center=False) (outputs)
 
         if useReLu:
             return tf.keras.layers.ReLU()(outputs)
@@ -82,7 +82,7 @@ class Xception:
         outputs = tf.keras.layers.SeparableConv1D(filters=filters, kernel_size=kernel_size,
                         strides=strides, padding=padding,
                         use_bias=False)(inputs)
-        # outputs = tf.keras.layers.BatchNormalization() (outputs)    
+        # outputs = tf.keras.layers.BatchNormalization(center=False) (outputs)    
         
         if useReLu:
             return tf.keras.layers.ReLU()(outputs)

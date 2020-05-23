@@ -4,6 +4,7 @@ from model.xception import Xception
 
 import tensorflow as tf
 from pathlib import Path
+import numpy as np
 
 class Test:
 
@@ -28,5 +29,6 @@ class Test:
         results = model.evaluate(X, Y)
         print('test loss, test acc:', results)
 
-        # score = loaded_model.evaluate(X, Y, verbose=0)
-        # print("%s: %.2f%%" % (loaded_model.metrics_names[1], score[1]*100))
+        for i, x in enumerate(X):
+            pred = model.predict(np.array([x]))
+            print("{}: {}: max: {}".format (i, pred[0][i], np.max(pred[0])))
