@@ -1,5 +1,5 @@
-cancertypeid,cancertypenae,symptoms,redflags
-0,Leukemia,0 0 0 1 0 1 0 1,0 0 0 1 0 1 0 1
-1,Central nervous system tumors,1 0 1 0 1 0 1 0,1 0 1 0 1 0 1 0
-2,Neuroblastoma,1 1 0 0 1 0 1 0,1 1 0 0 1 0 1 0
-3,Lymphoma,0 1 0 1 0 1 0 1,0 1 0 1 0 1 0 1
+cancertype,symptoms,redflags
+0,0 0 0 1 0 1 0 1,0 0 0 1 0 1 0 1
+1,1 0 1 0 1 0 1 0,1 0 1 0 1 0 1 0
+2,1 1 0 0 1 0 1 0,1 1 0 0 1 0 1 0
+3,0 1 0 1 0 1 0 1,0 1 0 1 0 1 0 1

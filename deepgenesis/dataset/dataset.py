@@ -20,7 +20,7 @@ class DataSet:
         X = []
         S = df.symptoms.values
         R = df.redflags.values
-        Y = df.cancertypeid.values
+        Y = df.cancertype.values
 
         bitmap_size =  len(S[0].split(' '))
         num_examples = len(S)
