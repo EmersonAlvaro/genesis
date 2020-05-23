@@ -16,9 +16,9 @@ print('tensorflow version {}'.format(tf.__version__))
 ds = DataSet()
 xception =  Xception()
 
-xception.plot_model()
+# xception.plot_model()
 # train = Train()
-# train.train(lr=1e-3,epochs=20)
+# train.train(lr=1e-3,epochs=100)
 
-# test = Test()
-# test.test()
+test = Test()
+test.test()
