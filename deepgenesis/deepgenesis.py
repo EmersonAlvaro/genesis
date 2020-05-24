@@ -23,7 +23,7 @@ class DeepGenesis:
         x = x.reshape(2, len(symptoms))
         x = x.transpose(1,0)
 
-        path = Path.joinpath(data_dir,'symptoms_cancer_test.csv')
+        path = Path.joinpath(data_dir,'cancertypes.csv')
         df = pd.read_csv(path)
         Y = df.cancertypename
         
