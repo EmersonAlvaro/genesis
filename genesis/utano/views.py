@@ -39,4 +39,3 @@ def output(request):
 	return render(request,'utano/home.html',{'data':data})
 	
 #data = output()
-

@@ -29,9 +29,16 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
         <h4><b> Ola, Nos estamos pronto para si!</b></h4>
         <h4><b> Clique no microfone e diga como se sente! </b></h4>
-        <a href="#">
-        <img src="{% static 'microphone.jpg' %}" alt="Person" style="width:20%">
-      </a>
+        <a href="'{% url 'script' %}'">
+          <img src="{% static 'microphone.jpg' %}" alt="Person" style="width:20%">
+          <!-- <button onclick="location.href='{% url 'script' %}'">Execute Script</button> <hr> -->
+        </a>
+
+        {% if data %}
+        
+        {{data | safe}}
+
+        {% endif %}
 
       </div>
   </div>
