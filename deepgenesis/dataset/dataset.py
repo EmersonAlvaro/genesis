@@ -8,11 +8,8 @@ import numpy as np
 class DataSet:
 
     def __init__(self):
-        X, Y = self.load_dataset()
-
-        # print("input shape \n {}".format(X))
-        # print("labels \n {}".format(Y))
-       
+        pass
+     
     def load_dataset(self):
         path = Path.joinpath(data_dir,'symptoms_cancer_test.csv')
         df = pd.read_csv(path)
