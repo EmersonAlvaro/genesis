@@ -25,8 +25,8 @@ xception =  Xception()
 # train = Train()
 # train.train(lr=1e-3,epochs=100)
 
-test = Test()
-test.test()
+# test = Test()
+# test.test()
 
 """
     Example: Prediciting Leukemia
