@@ -15,7 +15,7 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 .bgimg {
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/w3images/pizza.jpg");
+  /*background-image: url("/w3images/pizza.jpg");*/
   min-height: 90%;
 }
 </style>
@@ -29,10 +29,10 @@ body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
 
         <h4><b> Ola, Nos estamos pronto para si!</b></h4>
         <h4><b> Clique no microfone e diga como se sente! </b></h4>
-        <a href="'{% url 'script' %}'">
-          <img src="{% static 'microphone.jpg' %}" alt="Person" style="width:20%">
-          <!-- <button onclick="location.href='{% url 'script' %}'">Execute Script</button> <hr> -->
-        </a>
+        <!-- <a href=""> -->
+          <!-- <img src="{% static 'microphone.jpg' %}" alt="Person" style="width:20%"> -->
+          <button onclick="location.href='{% url 'script' %}'">Execute Script</button> <hr>
+        <!-- </a> -->
 
         {% if data %}
         
