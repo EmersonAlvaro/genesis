@@ -32,7 +32,7 @@ xception =  Xception()
 
 """
 
-path = Path.joinpath(data_dir,'symptoms_cancer_test.csv')
+path = Path.joinpath(data_dir,'dataset.csv')
 df = pd.read_csv(path)
 symptoms = df.symptoms.values 
 redflags = df.redflags.values
