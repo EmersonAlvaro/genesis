@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'w3.css' %}" type="text/css">
+<link rel="stylesheet" href="{% static 'pizcss.css' %}">
+<link rel="stylesheet" href="{% static 'icon.css' %}">
+
+<style>
+body, html {height: 100%}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Amatic SC", sans-serif}
+.menu {display: none}
+.bgimg {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/w3images/pizza.jpg");
+  min-height: 90%;
+}
+</style>
+<body>
+
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-middle w3-center" style="width:50%">
+
+      <img src="{% static 'doctor-icon.jpg' %}" alt="Person" style="width:30%">
+      <div class="w3-container">
+
+        <h4><b> Ola, Nos estamos pronto para si!</b></h4>
+        <h4><b> Clique no microfone e diga como se sente! </b></h4>
+        <a href="#">
+        <img src="{% static 'microphone.jpg' %}" alt="Person" style="width:20%">
+      </a>
+
+      </div>
+  </div>
+</header>
+
+
+</body>
+</html>

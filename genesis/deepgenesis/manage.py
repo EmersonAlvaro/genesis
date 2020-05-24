@@ -4,7 +4,6 @@ os.environ['TF_CPP_MIN_LOG_LEVEL'] = '1'
 import tensorflow as tf
 import pandas as pd
 from pathlib import Path
-
 from dataset.dataset import DataSet
 from train.train import Train
 from test.test import Test
