@@ -19,10 +19,10 @@ def button(request):
 def cria_audio(audio):
 	tts = gTTS(audio,lang='en-us')
 	#Salva o arquivo de audio
-	tts.save('audios/hello.mp3')
+	tts.save('utano/hello.mp3')
 	print("Estou aprendendo o que você disse...")
 	#Da play ao audio
-	playsound('audios/hello.mp3')
+	playsound('utano/hello.mp3')
 
  
 def output(request):
